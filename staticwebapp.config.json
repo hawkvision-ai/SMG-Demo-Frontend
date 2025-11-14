@@ -1,0 +1,6 @@
+{
+    "navigationFallback": {
+      "route": "/",
+      "rewrite": "/index.html"
+    }
+  }

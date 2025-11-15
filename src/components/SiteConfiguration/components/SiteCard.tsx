@@ -534,7 +534,7 @@ const SiteCard: React.FC<SiteCardProps> = ({
               </div>
             </div>
           )}
-
+          
           {/* Sync Button - Only show in real environment */}
           {env === "real" && (
             <div className="flex justify-end">
@@ -552,14 +552,6 @@ const SiteCard: React.FC<SiteCardProps> = ({
                       Cloud Edge not setup
                     </div>
                   </div>
-                ) : !isOnline ? (
-                  <button
-                    className="flex cursor-not-allowed items-center gap-0.5 rounded-md bg-gray-200 px-1.5 py-0.5 text-[10px] text-gray-700 sm:gap-1 sm:px-2 sm:py-1 sm:text-xs"
-                    disabled
-                  >
-                    <RefreshCw className="h-2.5 w-2.5 sm:h-3 sm:w-3" />
-                    Sync
-                  </button>
                 ) : (
                   <button
                     onClick={(e) => onSyncButtonClick(site, e)}
